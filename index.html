@@ -1,52 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Log-In</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <main>
-        <section>
-            <div class="wrapper">
-                <form action="index.html" method="POST" class="form-layout">
-                    <div class="button-layout">
-                        <input type="submit" name="login" value="LOGIN" class="login-button">
-                        <input type="submit" name="sign-up" value="SIGN UP" class="signup-button">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-eq uiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Papildoma uzduotis</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="with-layout">
+        <header class="heading">
+        <img src="logo.png" alt="logo" />
+        </header>
+    </div>
+    <div class="with-layout">
+        <main class="container">
+            <h1>Your journey begins here</h1>
+            <div class="with-cover">
+                <div class="card-content">
+                    <form>
+                        <div class="password-login">
+                        <div class="button-layout">
+                            <button class="button-small button-primary" type="button">
+                            login
+                            </button>
+                            <button class="button-small button-secondary" type="button">
+                            sign up
+                            </button>
+                        </div>
+                        <div class="login-block">
+                            <div class="input-list">
+                            <input
+                                type="text"
+                                name="email"
+                                placeholder="Enter email or username"
+                                required
+                                class="login-input"
+                            />
+                            <input
+                                type="password"
+                                name="password"
+                                placeholder="Enter password"
+                                required
+                                class="login-input"
+                            />
+                            </div>
+                            <a href="#" class="link">Forgot password?</a>
+                        </div>
+                        <button class="button-medium button-primary" type="submit">
+                            log in
+                        </button>
+                        </div>
+                    </form>
+                    <div class="or-label"><span>OR</span></div>
+                    <div class="social-login">
+                        <a href="#" class="social-button">
+                        <img src="images/facebook-icon.svg" />
+                        </a>
+                        <a href="#" class="social-button">
+                        <img src="images/google-icon.svg" />
+                        </a>
+                        <a href="#" class="social-button">
+                        <img src="images/twitter-icon.svg" class="smaller-icon" />
+                        </a>
+                        <a href="#" class="social-button">
+                        <img src="images/linkedin-icon.svg" class="smaller-icon" />
+                        </a>
                     </div>
-
-                    <input type="text" name="username" placeholder=" Enter email or username" class="username">
-                    <input type="password" name="password" placeholder=" Enter password" class="password">
-
-                    <a href="#" class="forgot-password">Forgot password?</a>
-
-                    <input type="submit" name="big-login-button" value="LOG IN" class="big-login-button">
-                </form>
-
-                <p class="or">OR</p>
-
-                <div class="login-with-group">
-                    <div class="login-with-button">
-                        <img src="https://img.favpng.com/5/1/2/computer-icons-email-facebook-login-bluetie-inc-png-favpng-Ax0PsRCK2i6r1W39L14bmbsC3.jpg" alt="login-fb">
-                    </div>
-
-                    <div class="login-with-button">
-                        <img src="https://img.favpng.com/5/1/2/computer-icons-email-facebook-login-bluetie-inc-png-favpng-Ax0PsRCK2i6r1W39L14bmbsC3.jpg" alt="login-fb">
-                    </div>
-
-                    <div class="login-with-button">
-                        <img src="https://img.favpng.com/5/1/2/computer-icons-email-facebook-login-bluetie-inc-png-favpng-Ax0PsRCK2i6r1W39L14bmbsC3.jpg" alt="login-fb">
-                    </div>
-
-                    <div class="login-with-button">
-                        <img src="https://img.favpng.com/5/1/2/computer-icons-email-facebook-login-bluetie-inc-png-favpng-Ax0PsRCK2i6r1W39L14bmbsC3.jpg" alt="login-fb">
-                    </div>
-
+                </div>
+                <div>
+                    <img src="https://seocache.s3.amazonaws.com/1200x1200_1614236202757_servicePhoto" alt="cver-pic" class="cover-img">
                 </div>
             </div>
-        </section>
-    </main>
-</body>
+        </main>
+    </div>
+    <div class="with-layout">
+        <footer class="footer">
+            <a href="#" class="footer-a">F.A.Q.</a>
+            <a href="#" class="footer-a">Privacy Policy</a>
+            <a href="#" class="footer-a">Terms of use</a>
+            <a href="#" class="footer-a">Contacts</a>
+        </footer>
+    </div>
+  </body>
 </html>
