@@ -295,9 +295,23 @@ header nav ul a {
         display: none;
     }
 
+    .hero-article {
+        height: 600px;
+    }
+
+    .hero-article-layout img {
+        object-fit: cover;
+    }
+
     .hero-article p {
         font-size: 36px;
-        line-height: 130%;
+        line-height: 120%;
+    }
+
+    .call-to-action button {
+        padding: 30px 40px 30px 40px;
+        font-size: 28px;
+        
     }
 
     .img-container img {
@@ -318,15 +332,16 @@ header nav ul a {
     }
 
     footer .wrapper>img {
-        height: 100px;
+        height: 150px;
     }
 
-    .social {
-        min-width: 300px;
+    .footer-top .social {
+        min-width: 360px;
     }
 
     .social img {
         height: 60px;
+        width: 60px;
     }
 
   }
