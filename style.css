@@ -7,6 +7,7 @@ body{
     font-family: sans-serif;
     min-height: 100vh;
     min-width: 1205px;
+    background-color: #333333;
 }
 
 .hero-article,
@@ -20,7 +21,7 @@ body{
 
 .wrapper {
     margin: 0 auto;
-    padding: 0 33px;
+    padding: 0 34px;
     display: flex;
     max-width: 1300px;
 }
@@ -127,7 +128,7 @@ header nav ul a {
 }
 
 .call-to-action {
-    padding: 139px 97px 161px 91px;
+    padding: 140px 98px 160px 92px;
     font-size: 24px;
     line-height: 120%;
     color: white;
@@ -264,8 +265,14 @@ header nav ul a {
     align-items: center;
 }
   @media screen and (max-width: 768px) {
-    .wrapper {
+    .top-section .wrapper,
+    .bottom-section .wrapper {
         flex-direction: column;
+    }
+
+    .top-section,
+    .bottom-section {
+        flex: 0;
     }
 
     .top-section-top,
@@ -273,14 +280,53 @@ header nav ul a {
     .bottom-section-top,
     .bottom-section-bottom {
         flex-direction: column;
-        min-height: 482px;
+        flex: 0 1 auto;
+        
     }
 
 
     .left,
     .right {
-        flex-basis: 50%;
+        flex: 0 1 auto;
+        height: 400px;
     }
 
+    header nav {
+        display: none;
+    }
+
+    .hero-article p {
+        font-size: 36px;
+        line-height: 130%;
+    }
+
+    .img-container img {
+        object-fit: cover;
+    }
+
+    .text-container,
+    .small-text-container {
+        font-size: 30px;
+    }
+
+    footer span {
+        font-size: 24px;
+    }
+
+    .footer-top span {
+        margin-bottom: 20px;
+    }
+
+    footer .wrapper>img {
+        height: 100px;
+    }
+
+    .social {
+        min-width: 300px;
+    }
+
+    .social img {
+        height: 60px;
+    }
 
   }
