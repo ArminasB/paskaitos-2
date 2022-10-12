@@ -17,6 +17,7 @@ body {
     "navigation h-content";
     grid-template-columns: 246px auto;
     grid-template-rows: 114px auto;
+    column-gap: 44px;
     height: 100%;
 }
 
@@ -53,7 +54,7 @@ body {
 }
 
 .navigation__link-image:focus {
-    color: rgba(27, 89, 248, 1);
+    background-color: rgba(27, 89, 248, 1);
 }
 
 .navigation__link-image {
@@ -139,7 +140,7 @@ body {
 
 .header {
     grid-area: header;
-    padding: 38px 65px 27px 44px;
+    padding: 38px 65px 27px 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: space-between;
@@ -147,6 +148,7 @@ body {
 }
 
 .header__heading {
+    align-self: center;
     margin: 0;
     font-size: 24px;
     line-height: 120%;
