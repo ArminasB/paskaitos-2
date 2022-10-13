@@ -16,13 +16,25 @@
                 <img src="assets\TESLA.png" alt="logo">
             </div>
             <div class="navigation__links-list">
-                    <a href="#" class="navigation__link"><div class="navigation__link-image link-image--reports"></div>Reports</a>
-                    <a href="#" class="navigation__link"><div class="navigation__link-image link-image--library"></div>Library</a>
-                    <a href="#" class="navigation__link"><div class="navigation__link-image link-image--people"></div>People</a>
-                    <a href="#" class="navigation__link"><div class="navigation__link-image link-image--activities"></div>Activities</a>
-                    <h6 class="navigation__links-list-section">Support</h6>
-                    <a href="#" class="navigation__link"><div class="navigation__link-image link-image--get-started"></div>Get Started</a>
-                    <a href="#" class="navigation__link"><div class="navigation__link-image link-image--settings"></div>Settings</a>
+                <a href="#" class="navigation__link">
+                    <div class="navigation__link-image link-image--reports"></div>Reports
+                </a>
+                <a href="#" class="navigation__link">
+                    <div class="navigation__link-image link-image--library"></div>Library
+                </a>
+                <a href="#" class="navigation__link">
+                    <div class="navigation__link-image link-image--people"></div>People
+                </a>
+                <a href="#" class="navigation__link">
+                    <div class="navigation__link-image link-image--activities"></div>Activities
+                </a>
+                <h6 class="navigation__links-list-section">Support</h6>
+                <a href="#" class="navigation__link">
+                    <div class="navigation__link-image link-image--get-started"></div>Get Started
+                </a>
+                <a href="#" class="navigation__link">
+                    <div class="navigation__link-image link-image--settings"></div>Settings
+                </a>
             </div>
             <div class="navigation__account">
                 <div>
@@ -45,13 +57,38 @@
             </div>
             <div class="header__right">
                 <div class="header__save-button-container">
-                    <div class="header__save-button"></div>
-                    <span class="header__save-button-name">Topic</span>
+                    <a href="#" class="header__save-button-link">
+                        <div class="header__save-button"></div><span class="header__save-button-name">Topic</span>
+                    </a>
                 </div>
             </div>
 
         </header>
         <section class="content">
+            <div class="content__top">
+                <div class="content__top-left">
+                    <form action="#" method="POST" class="content__search-form">
+                        <label for="search">
+                            <div class="content__search-icon"></div>
+                        </label>
+                        <input type="text" name="search" id="search" placeholder="Search"
+                            class="content__search-input">
+                    </form>
+                </div>
+                <div class="content__top-right">
+                    <a href="#" class="content__list-link">
+                        <div class="content__list-icon"></div>View Table
+                    </a>
+                </div>
+            </div>
+            <div class="content__bottom">
+                <div class="content__card add--card">
+                    <a href="#" class="content__add-link"><div class="content__add-button"></div></a>
+                    <h3 class="content__card-heading add--card-heading">Create Courses</h3>
+                    <a href="#" class="content__card-templates">View Templates</a>
+                </div>
+  
+            </div>
         </section>
     </main>
 </body>

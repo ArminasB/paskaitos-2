@@ -30,6 +30,10 @@ body {
     border-radius: 20px;
 }
 
+.navigation__logo {
+    margin-left: 20px;
+}
+
 .navigation__links-list {
     flex: 1;
     margin-top: 46px;
@@ -53,8 +57,8 @@ body {
     color: rgba(27, 89, 248, 1);
 }
 
-.navigation__link-image:focus {
-    background-color: rgba(27, 89, 248, 1);
+.navigation__link:focus .navigation__link-image {
+    background-color: rgb(27, 89, 248);
 }
 
 .navigation__link-image {
@@ -100,8 +104,6 @@ body {
 
 }
 
-
-
 .navigation__links-list {
     font-size: 16px;
     line-height: 120%;
@@ -140,7 +142,8 @@ body {
 
 .header {
     grid-area: header;
-    padding: 38px 65px 27px 0;
+    margin-right: 50px;
+    padding: 38px 16px 28px 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: space-between;
@@ -178,14 +181,14 @@ body {
 .header__link:focus {
     background-color: white;
     color: rgba(27, 89, 248, 1);
+    box-shadow: 0 0 10px 2px rgba(105, 105, 105, 0.104);
 }
 
 .header__save-button-container {
-    display: flex;
-    gap: 6px;
     padding: 14px 16px;
     background-color: white;
     border-radius: 10px;
+    box-shadow: 0 0 10px 2px rgba(105, 105, 105, 0.104);
 }
 
 .header__save-button {
@@ -197,6 +200,12 @@ body {
     align-self: center;
 }
 
+.header__save-button-link {
+    display: flex;
+    gap: 6px;
+    text-decoration: none;
+}
+
 .header__save-button-name {
     color: rgba(27, 89, 248, 1);
     font-size: 14px;
@@ -206,7 +215,131 @@ body {
 
 .content {
     grid-area: h-content;
+    margin-right: 50px;
+    padding: 26px 16px 28px 0;
     
+}
+
+.content__top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content__search-form {
+    display: flex;
+    gap: 12px;
+}
+
+.content__search-icon {
+    mask: url(assets/magnifying-glass-solid.svg) no-repeat center / contain;
+    -webkit-mask: url(assets/magnifying-glass-solid.svg) no-repeat center / contain;
+    background-color: rgb(86, 86, 86);
+    height: 18px;
+    width: 18px;
+    align-self: center;
+}
+
+.content__search-icon:hover {
+    cursor: pointer;
+}
+
+.content__search-input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #4d4d4da5;
+    font-size: 17px;
+    line-height: 120%;
+}
+
+.content__search-input::placeholder {
+    font-size: 17px;
+    line-height: 120%;
+}
+
+#text::-webkit-search-cancel-button {
+    display: none;
+}
+
+.content__list-link {
+    display: flex;
+    gap: 10px;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 120%;
+    color: #494949;
+}
+
+.content__list-icon {
+    mask: url(assets/format_list_bulleted_24px.png) no-repeat center / contain;
+    -webkit-mask: url(assets/format_list_bulleted_24px.png) no-repeat center / contain;
+    background-color: rgb(25, 25, 25);
+    height: 18px;
+    width: 18px;
+    align-self: center;
+}
+
+.content__bottom {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
+    row-gap: 24px;
+}
+
+.content__card {
+    height: 230px;
+    border-radius: 18px;
+
+}
+
+.add--card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 0 2px 2px rgba(128, 128, 128, 0.142);
+}
+
+.content__add-link {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: rgba(123, 123, 123, 0.313);
+    position: relative;
+
+}
+
+.content__add-button {
+    mask: url(assets/close_24px.png) no-repeat center / contain;
+    -webkit-mask: url(assets/close_24px.png) no-repeat center / contain;
+    background-color: rgba(0, 0, 255, 0.73);
+    height: 14px;
+    width: 14px;
+    align-self: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content__card-heading {
+    font-size: 18px;
+    line-height: 120%;
+    font-weight: bold;
+}
+
+.add--card-heading {
+    color: rgba(0, 0, 0, 0.7);
+
+}
+
+.content__card-templates {
+    font-size: 10px;
+    line-height: 120%;
+    color: rgba(0, 0, 0, 0.3);
+
 }
 
 @media screen and (max-width: 768px) {
